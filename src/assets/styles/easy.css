@@ -1,0 +1,207 @@
+a {
+    text-decoration: none;
+}
+
+.background {
+    background: #6c5f5b;
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+}
+
+.flagcount-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.flagcount {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.cell-container {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+
+@media (min-width: 600px) {
+    .cell {
+        width: calc(10vw - 12px);
+        height: calc(10vw - 12px);
+    }
+
+    .cell-type {
+        width: calc(10vw - 14px);
+        height: calc(10vw - 14px);
+        font-size: calc(5vw - 10px);
+    }
+
+    .bomb {
+        font-size: calc(5vw - 10px);
+    }
+
+    .flagged {
+        font-size: calc(5vw - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .cell {
+        width: calc(10vw - 12px);
+        height: calc(10vw - 12px);
+    }
+
+    .cell-type {
+        width: calc(10vw - 14px);
+        height: calc(10vw - 14px);
+        font-size: calc(5vw - 10px);
+    }
+
+    .bomb {
+        font-size: calc(4vw - 10px);
+    }
+
+    .flagged {
+        font-size: calc(4vw - 10px);
+    }
+}
+
+@media (min-width: 992px) {
+    .cell {
+        width: calc(10vh - 12px);
+        height: calc(10vh - 12px);
+    }
+
+    .cell-type {
+        width: calc(10vh - 14px);
+        height: calc(10vh - 14px);
+        font-size: calc(7vh - 10px);
+    }
+
+    .bomb {
+        font-size: calc(6vh - 10px);
+    }
+
+    .flagged {
+        font-size: calc(6vh - 10px);
+    }
+}
+
+.cell {
+    background-color: #231d33;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(7vh - 10px);
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.cell:hover {
+    background: #f5b68b;
+}
+
+.cell-type {
+    background-color: #f6f1ee;
+    color: #888;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.empty-cell {
+    background-color: #f6f1ee;
+}
+
+.number-1 {
+    color: blue;
+}
+
+.number-2 {
+    color: #008000;
+}
+
+.number-3 {
+    color: #FF0000;
+}
+
+.number-4 {
+    color: #000080;
+}
+
+.number-5 {
+    color: #800000;
+}
+
+.number-6 {
+    color: #008080;
+}
+
+.number-7 {
+    color: pink;
+}
+
+.number-8 {
+    color: deeppink;
+}
+
+.bomb {
+    background-color: #ed7d31;
+}
+
+.flagged {
+    color: #ed7d31;
+}
+
+.restartButton {
+    color: #4f4a45;
+    gap: 10px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define the shockwave animation */
+@keyframes shockwaveAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Apply shockwave effect styles */
+.shockwave {
+    animation: shockwaveAnimation 1s ease-out forwards;
+}
