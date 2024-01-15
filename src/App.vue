@@ -9,6 +9,10 @@
 </script>
 
 <style>
+#app {
+  background: #4f4a45;
+  color: #f6f1ee;
+}
 
 :root {
   background: #4f4a45;
