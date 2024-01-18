@@ -21,10 +21,33 @@ export default {
 
 </script>
 
+<script setup>
+import {onMounted, ref} from "vue";
+import {getAuth, onAuthStateChanged, signOut} from "firebase/auth";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+const isLoggedIn = ref(false);
+let auth;
+
+onMounted(() => {
+  auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    isLoggedIn.value = !!user;
+  })
+})
+
+const handleSignOut = () => {
+  signOut(auth).then(() => {
+    router.push('/')
+  })
+}
+</script>
+
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Minesweeper Web App</a>
+      <a class="navbar-brand" href="/home">Minesweeper Web App</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,6 +59,9 @@ export default {
           <NavBarItem :txt="prop3a" :link="prop3"/>
           <NavBarItem :txt="prop4a" :link="prop4"/>
           <NavBarItem :txt="prop5a" :link="prop5"/>
+          <li class="nav-item">
+            <a @click="handleSignOut" v-if="isLoggedIn" class="nav-link">Sign Out</a>
+          </li>
         </ul>
       </div>
     </div>
