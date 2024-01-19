@@ -3,7 +3,7 @@
   <p><input type="text" placeholder="Email" v-model="email"/></p>
   <p><input type="password" placeholder="Password" v-model="password"/></p>
   <p>
-    <button @click="register">Submit</button>
+    <button @click="register" class="button">Register</button>
   </p>
 </template>
 
