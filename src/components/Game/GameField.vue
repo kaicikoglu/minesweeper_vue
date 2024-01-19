@@ -2,6 +2,8 @@
 import $ from 'jquery';
 import FlagCounter from "@/components/Game/FlagCounter.vue";
 
+const base_url = "https://minesweeper-web.fly.dev/"
+
 export default {
   components: {FlagCounter},
   props: {
@@ -33,7 +35,7 @@ export default {
       }
     },
     connectWebSockets() {
-      this.socket = new WebSocket("ws://localhost:9000/socket");
+      this.socket = new WebSocket(base_url + "socket");
 
       this.socket.onopen = () => {
         console.log('WebSocket connection opened.');
@@ -127,7 +129,7 @@ export default {
     },
     initialField() {
       this.loadStylesheet()
-      fetch(`http://localhost:9000/game/${this.difficulty}`)
+      fetch(base_url + `game/${this.difficulty}`)
           .then(response => {
             if (!response.ok) {
               console.log(response)
@@ -154,7 +156,7 @@ export default {
     },
     getFlags() {
       $.ajax({
-        url: 'http://localhost:9000/game/flagsLeft',
+        url: base_url + 'game/flagsLeft',
         method: 'GET',
         success: (response) => {
           this.flags = response.flags_left;
