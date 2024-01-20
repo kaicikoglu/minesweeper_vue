@@ -5,18 +5,25 @@
     height: 25px;
 }
 
+.cell-container {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
 @media (min-width: 600px) {
     .cell {
         width: calc(4vw - 8px);
         height: calc(4vw - 8px);
-        border-radius: 6px;
+        border-radius: 3px;
     }
 
     .cell-type {
         width: calc(4vw - 10px);
         height: calc(4vw - 10px);
         font-size: calc(4vw - 10px);
-        border-radius: 5px;
+        border-radius: 3px;
     }
 
     .bomb{
@@ -32,14 +39,14 @@
     .cell {
         width: calc(4vw - 8px);
         height: calc(4vw - 8px);
-        border-radius: 6px;
+        border-radius: 3px;
     }
 
     .cell-type {
         width: calc(4vw - 10px);
         height: calc(4vw - 10px);
         font-size: calc(4vw - 10px);
-        border-radius: 5px;
+        border-radius: 2px;
     }
 
     .bomb{
@@ -55,14 +62,14 @@
     .cell {
         width: calc(4vh - 8px);
         height: calc(4vh - 8px);
-        border-radius: 6px;
+        border-radius: 3px;
     }
 
     .cell-type {
         width: calc(4vh - 10px);
         height: calc(4vh - 10px);
         font-size: calc(4vh - 10px);
-        border-radius: 5px;
+        border-radius: 2px;
     }
 
     .bomb{

@@ -45,7 +45,6 @@ a {
     margin-bottom: 3px;
 }
 
-
 @media (min-width: 600px) {
     .cell {
         width: calc(10vw - 12px);
