@@ -47,13 +47,13 @@ a {
 
 @media (min-width: 600px) {
     .cell {
-        width: calc(10vw - 12px);
-        height: calc(10vw - 12px);
+        width: calc(11vw - 12px);
+        height: calc(11vw - 12px);
     }
 
     .cell-type {
-        width: calc(10vw - 14px);
-        height: calc(10vw - 14px);
+        width: calc(11vw - 14px);
+        height: calc(11vw - 14px);
         font-size: calc(5vw - 10px);
     }
 
@@ -68,13 +68,13 @@ a {
 
 @media (max-width: 600px) {
     .cell {
-        width: calc(10vw - 12px);
-        height: calc(10vw - 12px);
+        width: calc(11vw - 12px);
+        height: calc(11vw - 12px);
     }
 
     .cell-type {
-        width: calc(10vw - 14px);
-        height: calc(10vw - 14px);
+        width: calc(11vw - 14px);
+        height: calc(11vw - 14px);
         font-size: calc(5vw - 10px);
     }
 
@@ -89,13 +89,13 @@ a {
 
 @media (min-width: 992px) {
     .cell {
-        width: calc(10vh - 12px);
-        height: calc(10vh - 12px);
+        width: calc(11vh - 12px);
+        height: calc(11vh - 12px);
     }
 
     .cell-type {
-        width: calc(10vh - 14px);
-        height: calc(10vh - 14px);
+        width: calc(11vh - 14px);
+        height: calc(11vh - 14px);
         font-size: calc(7vh - 10px);
     }
 
