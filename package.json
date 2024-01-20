@@ -16,7 +16,8 @@
     "vue": "^3.4.15",
     "vue-router": "^4.2.5",
     "workbox-webpack-plugin": "^7.0.0",
-    "workbox-window": "^7.0.0"
+    "workbox-window": "^7.0.0",
+    "bootstrap": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
