@@ -7,8 +7,8 @@
     <h2 class="text-center mb-4">Try it out!</h2>
     <div class="button">
       <button @click="$router.push('game/easy')">Easy</button>
+      <button @click="$router.push('game/medium')">Medium</button>
       <button @click="$router.push('game/hard')">Hard</button>
-      <button @click="$router.push('game/extreme')">Extreme</button>
     </div>
   </section>
 </template>

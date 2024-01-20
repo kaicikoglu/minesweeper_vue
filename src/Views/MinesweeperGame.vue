@@ -9,7 +9,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <NavBar prop1="/game/easy" prop1a="Easy" prop2a="Hard" prop2="/game/hard" prop3a="Extreme" prop3="/game/extreme"/>
+  <NavBar prop1="/game/easy" prop1a="Easy" prop2a="Hard" prop2="/game/medium" prop3a="Extreme" prop3="/game/hard"/>
   <GameField :difficulty="this.$route.params.difficulty"/>
 </template>
 

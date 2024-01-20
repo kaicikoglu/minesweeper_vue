@@ -9,8 +9,8 @@ import NavBar from "@/components/NavBar/NavBarAbout.vue";
     <h2 class="text-center">Try again!</h2>
     <div class="restartButton">
       <button @click="$router.push('game/easy')">Easy</button>
+      <button @click="$router.push('game/medium')">Medium</button>
       <button @click="$router.push('game/hard')">Hard</button>
-      <button @click="$router.push('game/extreme')">Extreme</button>
     </div>
 
   </div>
