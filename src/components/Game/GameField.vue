@@ -35,7 +35,7 @@ export default {
       }
     },
     connectWebSockets() {
-      this.socket = new WebSocket("ws://minesweeper-web.fly.dev/socket");
+      this.socket = new WebSocket(base_url + "socket");
 
       this.socket.onopen = () => {
         console.log('WebSocket connection opened.');
